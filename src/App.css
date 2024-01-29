@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* Global Styles */
+* {
+    font-family: "Raleway";
+    margin: 0;
+    padding: 0;
+    z-index: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header Styles */
+header {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(30, 30, 30, 1) 100%
+    );
+    box-shadow: -1px 10px 23px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: -1px 10px 23px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -1px 10px 23px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    text-decoration: none;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links li {
+    list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links li:nth-child(3) {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 769px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .links {
+        display: none;
+    }
+}
+
+/* Hero Styles */
+.hero {
+    background: #395e66;
+    background: linear-gradient(180deg, #afb9de 0%, #2a3b6e 100%);
+    height: 25vw;
+    display: flex;
+    z-index: -1;
+    border-bottom: 1px solid white;
+}
+
+.avatar {
+    height: 25vw;
+    -webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
+    filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
+    z-index: 0;
+}
+
+.col {
+    width: 50%;
+}
+
+/* Bio Styles */
+.bio {
+    z-index: 1;
+    background: linear-gradient(180deg, #474747 0%, #000000 100%);
+    height: 50vw;
 }
