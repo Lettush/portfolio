@@ -175,7 +175,7 @@ nav::before {
 .hero h4,
 .hero p,
 .hero .row {
-    padding: 0 30px 0 0;
+    padding: 0 10px 0 30px;
 }
 
 h4 {
@@ -212,7 +212,6 @@ p {
 
     .hero p {
         font-size: 0.9em;
-        padding: 0 10px 0 30px;
     }
 }
 
