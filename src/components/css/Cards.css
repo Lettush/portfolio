@@ -27,7 +27,7 @@
     flex: 1;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
     .cards {
         flex-wrap: wrap;
     }

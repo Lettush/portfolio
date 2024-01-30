@@ -47,7 +47,13 @@ const Home = () => {
                 </nav>
             </header>
             <section className="hero" id="header">
-                <div className="col"></div>
+                <div className="col">
+                    <img
+                        src="https://st4.depositphotos.com/9998432/22670/v/450/depositphotos_226700318-stock-illustration-person-gray-photo-placeholder-man.jpg"
+                        alt="Placeholder Image"
+                        className="avatar"
+                    />
+                </div>
                 <div className="col">
                     <h1>Hi, I'm Jared Hortaleza</h1>
                     <h4>Full-Stack Developer</h4>
@@ -66,17 +72,17 @@ const Home = () => {
                         ExpressJS, React, NodeJS) tech stack.
                     </p>
                     <div className="row">
-                        <button className="button">About Me</button>
+                        <button className="button">Hire Me</button>
                         <button className="button contact">Contact Me</button>
                     </div>
                     <div className="row">
                         <a
                             href="https://www.linkedin.com/in/jared-neil-hortaleza-001795187/"
-                            className="linkedin"
+                            className="linkedin" target="_blank"
                         >
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </a>
-                        <a href="https://github.com/Lettush" className="github">
+                        <a href="https://github.com/Lettush" className="github" target="_blank">
                             <ion-icon name="logo-github"></ion-icon>
                         </a>
                     </div>
@@ -84,37 +90,37 @@ const Home = () => {
             </section>
             <section className="bio" id="about">
                 <h2 className="bio-heading">All About Me</h2>
-                <ul class="cards">
+                <ul className="cards">
                     <li>
-                        <div class="card">
+                        <div className="card">
                             <img
                                 src="https://i.imgur.com/oYiTqum.jpg"
-                                class="card__image"
+                                className="card__image"
                                 alt=""
                             />
-                            <div class="card__overlay">
-                                <div class="card__header">
+                            <div className="card__overlay">
+                                <div className="card__header">
                                     <svg
-                                        class="card__arc"
+                                        className="card__arc"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <path />
                                     </svg>
                                     <img
-                                        class="card__thumb"
+                                        className="card__thumb"
                                         src="https://i.imgur.com/7D7I6dI.png"
                                         alt=""
                                     />
-                                    <div class="card__header-text">
-                                        <h3 class="card__title">
+                                    <div className="card__header-text">
+                                        <h3 className="card__title">
                                             Jessica Parker
                                         </h3>
-                                        <span class="card__status">
+                                        <span className="card__status">
                                             1 hour ago
                                         </span>
                                     </div>
                                 </div>
-                                <p class="card__description">
+                                <p className="card__description">
                                     Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Asperiores, blanditiis?
                                 </p>
@@ -122,35 +128,35 @@ const Home = () => {
                         </div>
                     </li>
                     <li>
-                        <div class="card">
+                        <div className="card">
                             <img
                                 src="https://i.imgur.com/oYiTqum.jpg"
-                                class="card__image"
+                                className="card__image"
                                 alt=""
                             />
-                            <div class="card__overlay">
-                                <div class="card__header">
+                            <div className="card__overlay">
+                                <div className="card__header">
                                     <svg
-                                        class="card__arc"
+                                        className="card__arc"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <path />
                                     </svg>
                                     <img
-                                        class="card__thumb"
+                                        className="card__thumb"
                                         src="https://i.imgur.com/7D7I6dI.png"
                                         alt=""
                                     />
-                                    <div class="card__header-text">
-                                        <h3 class="card__title">
+                                    <div className="card__header-text">
+                                        <h3 className="card__title">
                                             Jessica Parker
                                         </h3>
-                                        <span class="card__status">
+                                        <span className="card__status">
                                             1 hour ago
                                         </span>
                                     </div>
                                 </div>
-                                <p class="card__description">
+                                <p className="card__description">
                                     Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Asperiores, blanditiis?
                                 </p>
@@ -158,35 +164,35 @@ const Home = () => {
                         </div>
                     </li>
                     <li>
-                        <div class="card">
+                        <div className="card">
                             <img
                                 src="https://i.imgur.com/oYiTqum.jpg"
-                                class="card__image"
+                                className="card__image"
                                 alt=""
                             />
-                            <div class="card__overlay">
-                                <div class="card__header">
+                            <div className="card__overlay">
+                                <div className="card__header">
                                     <svg
-                                        class="card__arc"
+                                        className="card__arc"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <path />
                                     </svg>
                                     <img
-                                        class="card__thumb"
+                                        className="card__thumb"
                                         src="https://i.imgur.com/7D7I6dI.png"
                                         alt=""
                                     />
-                                    <div class="card__header-text">
-                                        <h3 class="card__title">
+                                    <div className="card__header-text">
+                                        <h3 className="card__title">
                                             Jessica Parker
                                         </h3>
-                                        <span class="card__status">
+                                        <span className="card__status">
                                             1 hour ago
                                         </span>
                                     </div>
                                 </div>
-                                <p class="card__description">
+                                <p className="card__description">
                                     Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Asperiores, blanditiis?
                                 </p>
@@ -194,35 +200,35 @@ const Home = () => {
                         </div>
                     </li>
                     <li>
-                        <div class="card">
+                        <div className="card">
                             <img
                                 src="https://i.imgur.com/oYiTqum.jpg"
-                                class="card__image"
+                                className="card__image"
                                 alt=""
                             />
-                            <div class="card__overlay">
-                                <div class="card__header">
+                            <div className="card__overlay">
+                                <div className="card__header">
                                     <svg
-                                        class="card__arc"
+                                        className="card__arc"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <path />
                                     </svg>
                                     <img
-                                        class="card__thumb"
+                                        className="card__thumb"
                                         src="https://i.imgur.com/7D7I6dI.png"
                                         alt=""
                                     />
-                                    <div class="card__header-text">
-                                        <h3 class="card__title">
+                                    <div className="card__header-text">
+                                        <h3 className="card__title">
                                             Jessica Parker
                                         </h3>
-                                        <span class="card__status">
+                                        <span className="card__status">
                                             1 hour ago
                                         </span>
                                     </div>
                                 </div>
-                                <p class="card__description">
+                                <p className="card__description">
                                     Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Asperiores, blanditiis?
                                 </p>
