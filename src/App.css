@@ -135,7 +135,7 @@ nav::before {
 .avatar {
     display: block;
     margin: auto;
-    width: 25em;
+    width: 20em;
     border-radius: 50%;
 }
 
@@ -210,8 +210,9 @@ p {
         font-size: 1.7em;
     }
 
-    p {
+    .hero p {
         font-size: 0.9em;
+        padding: 0 10px 0 30px;
     }
 }
 
