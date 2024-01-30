@@ -135,7 +135,7 @@ nav::before {
 .avatar {
     display: block;
     margin: auto;
-    width: 30vw;
+    width: 25em;
     border-radius: 50%;
 }
 
