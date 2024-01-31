@@ -4,6 +4,28 @@ import "./css/Cards.css";
 
 const Home = () => {
     useEffect(() => {
+        const cursorDot = document.getElementById("cursor-dot");
+        const cursorOutline = document.getElementById("cursor-outline");
+
+        window.addEventListener("mousemove", (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            cursorOutline.style.left = `${posX}px`;
+            cursorOutline.style.top = `${posY}px`;
+
+            cursorOutline.animate(
+                {
+                    left: `${posX}px`,
+                    top: `${posY}px`,
+                },
+                { duration: 500, fill: "forwards" }
+            );
+        });
+
         document.getElementById("nav").onmousemove = (e) => {
             const { currentTarget: target } = e;
             const rect = target.getBoundingClientRect(),
@@ -17,6 +39,10 @@ const Home = () => {
 
     return (
         <div>
+            {/* Custom Cursor */}
+            <div className="cursor-dot" id="cursor-dot"></div>
+            <div className="cursor-outline" id="cursor-outline"></div>
+
             <header>
                 <nav id="nav">
                     <ul className="nav-links">
@@ -50,7 +76,7 @@ const Home = () => {
                 <div className="col">
                     <img
                         src="https://st4.depositphotos.com/9998432/22670/v/450/depositphotos_226700318-stock-illustration-person-gray-photo-placeholder-man.jpg"
-                        alt="Placeholder Image"
+                        alt="Placeholder"
                         className="avatar"
                     />
                 </div>
@@ -78,18 +104,179 @@ const Home = () => {
                     <div className="row">
                         <a
                             href="https://www.linkedin.com/in/jared-neil-hortaleza-001795187/"
-                            className="linkedin" target="_blank"
+                            className="linkedin"
+                            target="_blank"
+                            rel="noreferrer"
                         >
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </a>
-                        <a href="https://github.com/Lettush" className="github" target="_blank">
+                        <a
+                            href="https://github.com/Lettush"
+                            className="github"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <ion-icon name="logo-github"></ion-icon>
                         </a>
                     </div>
                 </div>
             </section>
             <section className="bio" id="about">
-                <h2 className="bio-heading">All About Me</h2>
+                <h2 className="bio-heading">About</h2>
+            </section>
+            <section className="skills">
+                <h2 className="skills-heading">Skills</h2>
+                <div className="container">
+                    <div className="row">
+                        <div className="col box">
+                            <div className="row">
+                                <div className="icon">
+                                    <ion-icon name="logo-html5"></ion-icon>
+                                </div>
+                                <div className="details">
+                                    <h4>HTML</h4>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Atque fuga sint
+                                        commodi et hic doloremque temporibus
+                                        minima quas, sit laudantium autem, ut
+                                        vitae doloribus error totam unde culpa?
+                                        Quisquam, et!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col box">
+                            <div className="row">
+                                <div className="icon">
+                                    <ion-icon name="logo-html5"></ion-icon>
+                                </div>
+                                <div className="details">
+                                    <h4>HTML</h4>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Atque fuga sint
+                                        commodi et hic doloremque temporibus
+                                        minima quas, sit laudantium autem, ut
+                                        vitae doloribus error totam unde culpa?
+                                        Quisquam, et!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col box">
+                            <div className="row">
+                                <div className="icon">
+                                    <ion-icon name="logo-html5"></ion-icon>
+                                </div>
+                                <div className="details">
+                                    <h4>HTML</h4>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Atque fuga sint
+                                        commodi et hic doloremque temporibus
+                                        minima quas, sit laudantium autem, ut
+                                        vitae doloribus error totam unde culpa?
+                                        Quisquam, et!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col box">
+                            <div className="row">
+                                <div className="icon">
+                                    <ion-icon name="logo-html5"></ion-icon>
+                                </div>
+                                <div className="details">
+                                    <h4>HTML</h4>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Atque fuga sint
+                                        commodi et hic doloremque temporibus
+                                        minima quas, sit laudantium autem, ut
+                                        vitae doloribus error totam unde culpa?
+                                        Quisquam, et!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col box">
+                            <div className="row">
+                                <div className="icon">
+                                    <ion-icon name="logo-html5"></ion-icon>
+                                </div>
+                                <div className="details">
+                                    <h4>HTML</h4>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Atque fuga sint
+                                        commodi et hic doloremque temporibus
+                                        minima quas, sit laudantium autem, ut
+                                        vitae doloribus error totam unde culpa?
+                                        Quisquam, et!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col box">
+                            <div className="row">
+                                <div className="icon">
+                                    <ion-icon name="logo-html5"></ion-icon>
+                                </div>
+                                <div className="details">
+                                    <h4>HTML</h4>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Atque fuga sint
+                                        commodi et hic doloremque temporibus
+                                        minima quas, sit laudantium autem, ut
+                                        vitae doloribus error totam unde culpa?
+                                        Quisquam, et!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col box">
+                            <div className="row">
+                                <div className="icon">
+                                    <ion-icon name="logo-html5"></ion-icon>
+                                </div>
+                                <div className="details">
+                                    <h4>HTML</h4>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Atque fuga sint
+                                        commodi et hic doloremque temporibus
+                                        minima quas, sit laudantium autem, ut
+                                        vitae doloribus error totam unde culpa?
+                                        Quisquam, et!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col box">
+                            <div className="row">
+                                <div className="icon">
+                                    <ion-icon name="logo-html5"></ion-icon>
+                                </div>
+                                <div className="details">
+                                    <h4>HTML</h4>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Atque fuga sint
+                                        commodi et hic doloremque temporibus
+                                        minima quas, sit laudantium autem, ut
+                                        vitae doloribus error totam unde culpa?
+                                        Quisquam, et!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="projects">
+                <h2 className="project-heading">Projects</h2>
                 <ul className="cards">
                     <li>
                         <div className="card">
@@ -236,9 +423,6 @@ const Home = () => {
                         </div>
                     </li>
                 </ul>
-            </section>
-            <section className="skills">
-                <h2 className="skills-heading">My Skills</h2>
             </section>
         </div>
     );

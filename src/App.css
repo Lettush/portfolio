@@ -7,6 +7,7 @@
     padding: 0;
     z-index: 0;
     color: white;
+    cursor: none;
 }
 
 html {
@@ -21,8 +22,11 @@ body {
 :root {
     --main: #011326;
     --secondary: #010d18;
+    --tertiary: #001d38;
     --highlight: #72aade;
     --secondary-highlight: #115d93;
+    --table-border-color: rgb(229, 229, 229);
+    --axes-color: rgb(228, 228, 228, 0.35);
 }
 
 h1,
@@ -30,6 +34,30 @@ h2,
 h3,
 h4 {
     font-size: 3em;
+}
+
+/* Custom Cursor */
+.cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 5;
+    pointer-events: none;
 }
 
 /* Header Styles */
@@ -60,10 +88,10 @@ a {
 .nav-links li {
     list-style-type: none;
     padding: 10px 20px;
+    transition: font-weight 500ms, font-size 500ms;
 }
 
 .nav-links li:hover {
-    cursor: pointer;
     font-weight: bold;
     font-size: 20px;
     transition: font-weight 500ms, font-size 500ms;
@@ -126,7 +154,7 @@ nav::before {
     justify-content: center;
 }
 
-.row {
+.hero .col .row {
     display: flex;
     margin-top: 20px;
     justify-content: left;
@@ -166,7 +194,11 @@ nav::before {
 /* Bio Styles */
 .bio {
     z-index: 1;
-    background: linear-gradient(180deg, var(--secondary) 0%, var(--main) 100%);
+    background: linear-gradient(
+        180deg,
+        var(--secondary) 0%,
+        var(--tertiary) 100%
+    );
 }
 
 .hero h1,
@@ -215,7 +247,7 @@ p {
     }
 }
 
-ion-icon {
+a ion-icon {
     border: 2px solid var(--secondary-highlight);
     padding: 10px;
     border-radius: 50%;
@@ -225,7 +257,7 @@ ion-icon {
     margin-right: 20px;
 }
 
-ion-icon:hover {
+a ion-icon:hover {
     filter: brightness(100%);
     transition: filter 0.5s ease;
 }
@@ -236,7 +268,83 @@ ion-icon:hover {
 }
 
 /* Skills Styling */
+.skills {
+    margin-bottom: 30px;
+    background: linear-gradient(180deg, var(--tertiary) 0%, var(--main) 100%);
+}
+
 .skills-heading {
     text-align: center;
     padding: 30px;
+}
+
+.subheading {
+    padding-left: 30px;
+}
+
+.skills .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 25em;
+    margin: 5px 5px;
+    position: relative;
+    background-color: var(--secondary);
+    border-radius: 25px;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+    padding: 2px;
+    background: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.719),
+        rgba(255, 255, 255, 0.167)
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.box .row {
+    align-items: center;
+}
+
+.icon {
+    width: 30%;
+    text-align: center;
+}
+
+.icon ion-icon {
+    font-size: 5em;
+}
+
+.details {
+    width: 70%;
+}
+
+.details h4 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.details p {
+    font-size: 0.8em;
+}
+
+/* Projects Styling */
+.projects {
+    margin-bottom: 30px;
+    background: linear-gradient(180deg, var(--main) 0%, var(--secondary) 100%);
+}
+
+.project-heading {
+    text-align: center;
 }
