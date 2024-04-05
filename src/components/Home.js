@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import "../App.css";
 import "./css/Cards.css";
+import Hero from "../sections/Hero";
+import Bio from "../sections/Bio";
+import Navbar from "../sections/Navbar";
 
 const Home = () => {
   useEffect(() => {
@@ -44,34 +47,12 @@ const Home = () => {
       <div className="cursor-outline" id="cursor-outline"></div>
 
       <header>
-        <nav id="nav">
-          <ul className="nav-links">
-            <li>
-              <a href="#about" className="links">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="links">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#header">Jared Hortaleza</a>
-            </li>
-            <li>
-              <a href="#experience" className="links">
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="#skills" className="links">
-                Skills
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
       </header>
+      <main>
+        <Hero />
+        <Bio />
+      </main>
     </div>
   );
 };
