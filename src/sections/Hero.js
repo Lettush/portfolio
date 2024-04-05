@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="col">
           <img
             src={Avatar}
-            alt="Jared's Image"
+            alt="Jared"
             className="avatar"
           />
         </div>
