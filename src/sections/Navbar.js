@@ -2,26 +2,26 @@ const Navbar = () => {
   return (
     <nav id="nav">
       <ul className="nav-links">
-        <li>
-          <a href="#about" className="links">
+        <li className="links">
+          <a href="#about">
             About
           </a>
         </li>
-        <li>
-          <a href="#projects" className="links">
+        <li className="links">
+          <a href="#projects">
             Projects
           </a>
         </li>
         <li>
           <a href="#header">Jared Hortaleza</a>
         </li>
-        <li>
-          <a href="#experience" className="links">
+        <li className="links">
+          <a href="#experience">
             Experience
           </a>
         </li>
-        <li>
-          <a href="#skills" className="links">
+        <li className="links">
+          <a href="#skills">
             Skills
           </a>
         </li>
