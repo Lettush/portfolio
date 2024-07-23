@@ -1,0 +1,8 @@
+.glow {
+  background: rgb(188, 239, 48);
+  background: linear-gradient(
+    90deg,
+    rgb(43, 58, 29) 0%,
+    #1e1e1e 80%
+  );
+}
