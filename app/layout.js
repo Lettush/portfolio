@@ -5,10 +5,14 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Jared's Portfolio",
-  description: "All About Jared Neil Hortaleza",
+  description: "This is Jared Neil Hortaleza's Portfolio.",
   icons: {
     icon: "images/favicon.ico",
   },
+};
+
+export const viewport = {
+  themeColor: "green",
 };
 
 export default function RootLayout({ children }) {
