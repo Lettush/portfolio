@@ -21,11 +21,11 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-            quae.
+            Innovative Full Stack Developer, API expert, educator, and music
+            creator.
           </p>
           <div>
-            <button className="transition ease delay-50 px-6 py-3 rounded-full mr-4 bg-gradient-to-tr text-white from-[#96900f] to-[#2ca521] hover:from-[#fcf350] hover:to-[#42fc32] hover:text-black w-full sm:w-fit">
+            <button className="transition ease delay-50 px-6 py-3 rounded-full mr-4 bg-gradient-to-tr text-white from-[#ada95f] to-[#25891b] hover:from-[#fcf350] hover:to-[#42fc32] hover:text-black w-full sm:w-fit">
               Hire Me
             </button>
             <button className="px-1 py-1 rounded-full mr-4 bg-gradient-to-tr from-[#dcd11a] to-[#71f131] hover:bg-slate-800 text-white mt-3 w-full sm:w-fit">
