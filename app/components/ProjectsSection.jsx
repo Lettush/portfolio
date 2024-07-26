@@ -65,6 +65,7 @@ const ProjectsSection = () => {
         {tagList.map((tag) => {
           return (
             <ProjectTag
+              key={tag}
               onClick={() => handleTagChange(tag)}
               name={tag}
               isSelected={selectedTag === tag}

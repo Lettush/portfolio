@@ -81,7 +81,12 @@ const EmailSection = () => {
               placeholder="Let's talk!"
             ></textarea>
           </div>
-          <button type="submit" className="transition-all ease delay-50 bg-green-600 hover:bg-green-200 text-white hover:text-black font-medium py-2.5 px-5 rounded-lg w-full">Send Message</button>
+          <button
+            type="submit"
+            className="transition-all ease delay-50 bg-green-600 hover:bg-green-200 text-white hover:text-black font-medium py-2.5 px-5 rounded-lg w-full"
+          >
+            Send Message
+          </button>
         </form>
       </div>
     </section>
