@@ -8,7 +8,7 @@ const EmailSection = () => {
   return (
     <section className="bg-[#000000] grid md:grid-cols-2 my-12 md:my-12 p-12 gap-8 rounded-lg">
       <div className="mb-5 md:mb-0">
-        <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
+        <h5 className="text-xl font-bold text-white my-2">{"Let's Connect"}</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {"If you're looking to hire someone who excels in communication and project coordination, or if you simply want to connect, please don't hesitate to reach out to me. I would love to discuss how I can contribute to your team's success!"}
         </p>
