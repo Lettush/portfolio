@@ -10,10 +10,7 @@ const EmailSection = () => {
       <div className="mb-5 md:mb-0">
         <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          If you're looking to hire someone who excels in communication and
-          project coordination, or if you simply want to connect, please don't
-          hesitate to reach out to me. I would love to discuss how I can
-          contribute to your team's success!
+          {"If you're looking to hire someone who excels in communication and project coordination, or if you simply want to connect, please don't hesitate to reach out to me. I would love to discuss how I can contribute to your team's success!"}
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/Lettush" target="_blank">
