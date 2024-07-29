@@ -16,6 +16,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
               href={gitUrl}
               className="h-14 w-14 mr-3 border-2 relative rounded-full border-[#e1fdc2] hover:border-white group/link"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <CodeBracketIcon className="h-10 w-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#e1fdc2] cursor-pointer group-hover/link:text-white" />
             </Link>
@@ -25,6 +26,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
             href={previewUrl}
             className="h-14 w-14 border-2 relative rounded-full border-[#e1fdc2] hover:border-white group/link"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <EyeIcon className="h-10 w-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#e1fdc2] cursor-pointer group-hover/link:text-white" />
           </Link>

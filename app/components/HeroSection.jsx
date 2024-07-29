@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -26,12 +27,16 @@ const HeroSection = () => {
           </p>
           <div>
             <button className="transition ease delay-50 px-6 py-3 rounded-full mr-4 bg-gradient-to-tr text-white from-[#ada95f] to-[#25891b] hover:from-[#fcf350] hover:to-[#42fc32] hover:text-black w-full sm:w-fit">
-              Hire Me
+              <Link href={"mailto:jaredneilhortaleza11@gmail.com"}>
+                Hire Me
+              </Link>
             </button>
             <button className="px-1 py-1 rounded-full mr-4 bg-gradient-to-tr from-[#dcd11a] to-[#71f131] hover:bg-slate-800 text-white mt-3 w-full sm:w-fit">
-              <span className="transition ease delay-50 block bg-[#232323] hover:bg-[#253716] rounded-full px-5 py-2">
-                Download CV
-              </span>
+              <Link href={"./CV.pdf"} target="_blank" rel="noopener noreferrer">
+                <span className="transition ease delay-50 block bg-[#232323] hover:bg-[#253716] rounded-full px-5 py-2">
+                  Download CV
+                </span>
+              </Link>
             </button>
           </div>
         </div>

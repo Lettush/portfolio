@@ -28,6 +28,7 @@ const EmailSection = () => {
           <Link
             href="https://www.linkedin.com/in/jared-neil-hortaleza-001795187/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Image src={LinkedinIcon} alt="LinkedIn Icon" />
           </Link>
